@@ -1,0 +1,51 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <filter>
+  	<filter-name>Myfilter</filter-name>
+  	<display-name>Myfilter</display-name>
+  	<description></description>
+  	<filter-class>filter.Myfilter</filter-class>
+  </filter>
+  <filter>
+  	<filter-name>Filter2</filter-name>
+  	<display-name>Filter2</display-name>
+  	<description></description>
+  	<filter-class>filter.Filter2</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>Myfilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+  	<filter-name>Filter2</filter-name>
+  	<url-pattern>/Filter2</url-pattern>
+  </filter-mapping>
+  <servlet>
+  	<servlet-name>MyServlet</servlet-name>
+  	<display-name>MyServlet</display-name>
+  	<description></description>
+  	<servlet-class>MyServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Test</servlet-name>
+  	<display-name>Test</display-name>
+  	<description></description>
+  	<servlet-class>danli.Test</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MyServlet</servlet-name>
+  	<url-pattern>/MyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Test</servlet-name>
+  	<url-pattern>/Test</url-pattern>
+  </servlet-mapping>
+  
+  <session-config> 
+           <session-timeout>1</session-timeout> 
+     </session-config>
+</web-app>
